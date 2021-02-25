@@ -15,8 +15,7 @@ int main(){
             days[0]=day%100;
             days[1]=exp%100;
             }
-            printf("%d %d %d %d %d %d",days[0],days[1],month[0],month[1],year[0],year[1]);
-    if(days[1]>31||days[0]>31||((days[1]>30||days[0]>30)&&((month[1]==4||month[1]==6||month[1]==8||month[1]==11)||(month[0]==4||month[0]==6||month[0]==8||month[0]==11)))||((days[1]>29||days[0]>29)&&(month[0]==2||month[1]==2)))
+    if(month[1]>12||month[0]>12||days[1]>31||days[0]>31||((days[1]>30||days[0]>30)&&((month[1]==4||month[1]==6||month[1]==8||month[1]==11)||(month[0]==4||month[0]==6||month[0]==8||month[0]==11)))||((days[1]>29||days[0]>29)&&(month[0]==2||month[1]==2)))
         printf("W");
     else if(year[1]>year[0])
         printf("B");
